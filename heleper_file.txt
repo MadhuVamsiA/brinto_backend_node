@@ -1,0 +1,59 @@
+post /signup
+body: JSON.stringify({
+                name,
+                email,
+                password,
+                notificationToken: expoPushToken
+            })
+
+
+signin:
+/signin
+
+            body: JSON.stringify({
+                email: email,
+                password: password,
+                notificationToken: expoPushToken
+            })
+
+
+/forgot-password
+
+
+
+/rn/allposts  - get
+
+
+
+/rn/post/new/${userId} -post
+{title, body, base64Data, imageType}
+
+
+
+/post/${postId}  - delete
+
+/post/${postId}  - put
+
+
+/post/unlike
+
+/post/like
+
+
+/post/comment
+{ userId, postId, comment }
+
+
+/post/uncomment
+
+{ userId, postId, comment }
+
+/user/follow
+
+/user/unfollow
+
+
+/user/findpeople/${loggedUserId}
+
+
+/rn/user/ - put 
